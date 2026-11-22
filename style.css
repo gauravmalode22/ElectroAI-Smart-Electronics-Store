@@ -79,3 +79,108 @@ p {
     border-radius: 30px;
     font-weight: bold;
 }
+
+
+
+
+
+
+/* Responsive Section starts from here  */
+
+/* Responsive hero section */
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .shop-btn {
+        padding: 10px 20px;
+    }
+
+/* Mobile navbar */
+.navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 15px;
+}
+
+/* Mobile navigation links */
+.nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+}
+
+/* Products section */
+.products {
+    padding: 60px 20px;
+    background-color: #f8fafc;
+}
+
+.products h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #111e38;
+    margin-bottom: 40px;
+}
+
+/* Product card */
+.product-card {
+    box-sizing: border-box;
+    background-color: white;
+    width: 280px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Product image */
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+/* Product name */
+.product-card h3 {
+    font-size: 20px;
+    color: #111e38;
+}
+
+/* Product description */
+.product-card p {
+    font-size: 14px;
+    color: #475569;
+}
+
+/* Product price */
+.product-card .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* Add to Cart button */
+.add-to-cart {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
