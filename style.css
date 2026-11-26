@@ -1,6 +1,6 @@
 
 body {
-    background-color: #f0f4ff;
+    background-color: #D4EEF8;
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -10,13 +10,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #111e38;
+    background-color: #152026;
     padding: 20px 40px;
 }
 
 /* Store logo */
 .logo h2 {
-    color: white;
+    color: #F3EED8;
     margin: 0;
 }
 
@@ -24,27 +24,30 @@ body {
 .nav-links {
     display: flex;
     gap: 30px;
+    color: #F3EED8;
 }
-
+.nav-links a:hover {
+    color: #6A97C0;
+}
 /* Individual links */
 .nav-links a {
-    color: white;
+    color: #F3EED8;
     text-decoration: none;
     font-weight: bold;
 }
 
 
 h1 {
-    color: #2563eb;
+    color: #152026;
 }
 
 p {
-    color: #374151;
+    color: #1B3D59;
 }
 
 /* Hero section */
 .hero {
-    background-color: #eaf1ff;
+    background-color: #B3D5F1;
     padding: 80px 20px;
     text-align: center;
 }
@@ -58,21 +61,21 @@ p {
 /* Hero heading */
 .hero h1 {
     font-size: 40px;
-    color: #111e38;
+    color: #1B3D59;
     margin-bottom: 20px;
 }
 
 /* Hero paragraph */
 .hero p {
     font-size: 18px;
-    color: #475569;
+    color: #1B3D59;
     margin-bottom: 30px;
 }
 
 /* Shop Now button */
 .shop-btn {
     display: inline-block;
-    background-color: #2563eb;
+    background-color: #1B3D59;
     color: white;
     padding: 12px 25px;
     text-decoration: none;
@@ -80,7 +83,49 @@ p {
     font-weight: bold;
 }
 
+.shop-btn:hover {
+    background-color: #152026;
+}
+.products {
+    background-color: #D4EEF8;
+}
 
+/* Products heading */
+.products h2 {
+    color: #152026;
+}
+
+/* Product cards */
+.product-card {
+    background-color: #FFFFFF;
+    outline: 1px solid #6A97C0;
+    box-shadow: 0 4px 12px rgba(27, 61, 89, 0.1);
+}
+
+/* Product name */
+.product-card h3 {
+    color: #152026;
+}
+
+/* Product description */
+.product-card p {
+    color: #1B3D59;
+}
+
+/* Product price */
+.product-card .price {
+    color: #1B3D59;
+}
+
+/* Add to Cart button */
+.add-to-cart {
+    background-color: #1B3D59;
+    color: #F3EED8;
+}
+
+.add-to-cart:hover {
+    background-color: #152026;
+}
 
 
 
@@ -184,3 +229,20 @@ p {
     cursor: pointer;
     font-weight: bold;
 }
+
+/* Product layout */
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.product-card {
+    /* Keep all your existing product-card styles */
+    width: 100%;
+}
+
+  
